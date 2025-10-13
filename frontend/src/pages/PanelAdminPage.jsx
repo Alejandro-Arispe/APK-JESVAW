@@ -13,6 +13,7 @@ import {
   PersonsContent,
   StudentsContent,
   EnrollmentsContent,
+  AttendanceContent,
   // ReportsContent,
 } from './content';
 
@@ -59,7 +60,7 @@ export default function PanelAdminPage() {
       // case 'reports':
       //   return <ReportsContent />;
       case 'attendance':
-        return <AttendanceContent />; // asistencia 
+        return <AttendanceContent />; // asistencia
       default:
         return <DashboardContent />;
     }

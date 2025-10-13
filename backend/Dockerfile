@@ -41,6 +41,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Reqs (si usas poetry, ajusta)
 COPY requirements.txt /app/requirements.txt
+
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
 # Copiar proyecto
