@@ -38,6 +38,7 @@ SHARED_APPS = [
     # propias compartidas
     "accounts",
     "tenants",
+    "document",
 ]
 
 # Apps por tenant (cada colegio)
