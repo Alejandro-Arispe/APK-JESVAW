@@ -12,17 +12,17 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # Documentación automática (OpenAPI/Swagger)
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path("api/docs/", SpectacularSwaggerView.as_view(url_name="schema")),
-    # Rutas de las apps
-    path("api/", include("accounts.urls")),  # login JWT, gestión de usuarios
-    path("api/", include("tenants.urls")),  # planes, tenants/colegios
-    path("api/", include("academics.urls")),  # estudiantes, calificaciones, asistencia
-    path("api/", include("comms.urls")),  # mensajería básica
-    path("api/", include("payments.urls")),  # pagos internos del colegio
-    path("api/", include("core.urls")),  # healthchecks
-]
+    path("api/", include("accounts.urls")),
+    path("api/", include("tenants.urls")),
+    path("api/", include("academics.urls")),
+    path("api/", include("comms.urls")),
+    path("api/", include("payments.urls")),
+    path("api/", include("core.urls")),
+    path("api/", include("document.urls")),  # ✅ rutas de document
+
+    ]
 
 
 # Servir archivos media en desarrollo
