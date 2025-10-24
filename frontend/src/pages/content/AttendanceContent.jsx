@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
 import { apiFetch } from '../../utils/api';
-import BarcodeScanner from '../../components/BarcodeScanner';
 import DataTable from '../../components/DataTable';
 
 export default function AttendanceContent() {

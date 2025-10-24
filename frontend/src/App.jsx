@@ -7,6 +7,7 @@ import SignUpPage from './pages/SignUpPage';
 import RegisterSchoolPage from './pages/RegisterSchoolPage';
 import ProtectedRoute from './secure/ProtectedRoute';
 import { Document } from './pages/Document';
+import { Asistencia } from './pages/Jhonatan/Asistencia';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/signup' element={<SignUpPage />} />
         <Route path='/register-school' element={<RegisterSchoolPage />} />
         <Route path='/new' element={<Document />} />
+        <Route path='/mos' element={<Asistencia />} />
 
         {/* Páginas protegidas */}
         <Route
