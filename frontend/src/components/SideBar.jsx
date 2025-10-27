@@ -31,9 +31,11 @@ function Sidebar({ activeSection, setActiveSection }) {
         { id: 'grades', name: 'Grados' },
         { id: 'sections', name: 'Secciones' },
         { id: 'subjects', name: 'Materias' },
-        { id: 'attendance', name: 'Asistencia' },
+        { id: 'Asistencia', name: 'Asistencia' },
+        { id: 'Document', name: 'Document' },
       ],
     },
+
     {
       id: 'people',
       name: 'Gestión de Personas',

@@ -16,6 +16,8 @@ import {
   AttendanceContent,
   // ReportsContent,
 } from './content';
+import { Document } from './Document';
+import { Asistencia } from './Jhonatan/Asistencia';
 
 export default function PanelAdminPage() {
   const [activeSection, setActiveSection] = useState('dashboard');
@@ -55,6 +57,10 @@ export default function PanelAdminPage() {
         return <PersonsContent />;
       case 'students':
         return <StudentsContent />;
+      case 'Document':
+        return <Document />;
+      case 'Asistencia':
+        return <Asistencia />;
       case 'enrollments':
         return <EnrollmentsContent />;
       // case 'reports':
