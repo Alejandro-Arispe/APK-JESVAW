@@ -9,6 +9,13 @@ from .models import (
     Person,
     Student,
     Enrollment,
+    Teacher,
+    TeacherAssignment,
+    GradingDimension,
+    GradingPeriod,
+    DimensionWeight,
+    StudentGrade,
+    GradeAverage
 )
 
 
